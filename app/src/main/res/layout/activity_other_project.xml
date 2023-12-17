@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:src="@android:drawable/btn_dialog"
+        android:id="@+id/go_back_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#F00" />
+
+    <TextView
+        android:id="@+id/project_main_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:textSize="48sp"/>
+
+    <TextView
+        android:id="@+id/project_main_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="end"
+        android:textSize="12sp"/>
+
+    <Button
+        android:id="@+id/project_main_participant_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="참여자 명단\n 대표 외\nn 명"
+        android:textSize="32sp"
+        android:layout_margin="32dp"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/project_main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#CCC"
+        android:layout_weight="2"/>
+
+    <Button
+        android:id="@+id/other_project_detail_schedule_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="상세 일정"
+        android:textSize="32dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/other_project_to_resource_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="리소스 모음"
+        android:textSize="32dp"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@android:drawable/btn_dialog"
+            android:id="@+id/go_back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#F00" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="프로젝트 권한 설정"
+            android:textSize="30dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <Switch
+            android:id="@+id/project_is_finished_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="프로젝트 완료"
+            android:textSize="24sp"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:layout_gravity="center"
+            android:thumbTint="#00C0C0"
+            android:trackTint="#00C0C0"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <Switch
+            android:id="@+id/project_display_in_business_card_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="명함에 출력"
+            android:textSize="24sp"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:layout_gravity="center"
+            android:thumbTint="#00C0C0"
+            android:trackTint="#00C0C0"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:padding="8dp"
+            android:layout_marginStart="8dp"
+            android:id="@+id/which_options_are_open"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="공개 범위"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:id="@+id/display_member_list_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="참여자 명단"
+                android:textSize="20sp"
+                android:layout_marginStart="8dp"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:thumbTint="#00C0C0"
+                android:trackTint="#00C0C0"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:id="@+id/display_calendar_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="일정"
+                android:textSize="20sp"
+                android:layout_marginStart="8dp"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:thumbTint="#00C0C0"
+                android:trackTint="#00C0C0"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:id="@+id/display_resources_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="리소스 모음"
+                android:textSize="20sp"
+                android:layout_marginStart="8dp"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:thumbTint="#00C0C0"
+                android:trackTint="#00C0C0"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="저장"
+        android:textSize="32sp"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

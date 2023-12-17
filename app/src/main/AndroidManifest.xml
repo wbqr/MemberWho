@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MemberWho"
+        tools:targetApi="31">
+        <activity
+            android:name=".ProjectImageSetting"
+            android:exported="false" />
+        <activity
+            android:name=".ProjectScheduleManager"
+            android:exported="false" />
+        <activity
+            android:name=".ProjectScheduleUser"
+            android:exported="false" />
+        <activity
+            android:name=".OtherProject"
+            android:exported="false" />
+        <activity
+            android:name=".OtherUser"
+            android:exported="false" />
+        <activity
+            android:name=".ProjectResource"
+            android:exported="false" />
+        <activity
+            android:name=".ProjectPermissionSettings"
+            android:exported="false" />
+        <activity
+            android:name=".MemberInfoReadOnly"
+            android:exported="false" />
+        <activity
+            android:name=".AddNewMember"
+            android:exported="false" />
+        <activity
+            android:name=".MemberInfo"
+            android:exported="false" />
+        <activity
+            android:name=".ProjectMainSetting"
+            android:exported="false"
+            android:theme="@style/Dialog.Theme.MemberWho" />
+        <activity
+            android:name=".ProjectMain"
+            android:exported="false" />
+        <activity
+            android:name=".ForSignUp"
+            android:exported="false" />
+        <activity
+            android:name=".NewProject"
+            android:exported="false" />
+        <activity
+            android:name=".Menu"
+            android:exported="false"
+            android:theme="@style/Dialog.Theme.MemberWho" />
+        <activity
+            android:name=".EmailPasswordActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EditInfo"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

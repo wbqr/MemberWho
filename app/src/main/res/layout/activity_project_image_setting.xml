@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProjectImageSetting"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:src="@android:drawable/btn_dialog"
+        android:id="@+id/go_back_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#F00"
+        android:layout_marginBottom="16dp"/>
+
+    <ImageButton
+        android:id="@+id/project_image"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_width="352dp"
+        android:layout_height="198dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/find_image_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="이미지 검색"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/save_image_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="저장하기"
+        android:textSize="24sp" />
+
+</LinearLayout>
